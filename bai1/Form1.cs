@@ -19,7 +19,7 @@ namespace bai1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Thong bao" , "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void btntuchien_Click(object sender, EventArgs e)
@@ -30,6 +30,10 @@ namespace bai1
         private void btnthoat_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txt_hienthi_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

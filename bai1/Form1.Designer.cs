@@ -37,21 +37,25 @@
             // 
             // txt_hienthi
             // 
-            this.txt_hienthi.Location = new System.Drawing.Point(80, 38);
+            this.txt_hienthi.Location = new System.Drawing.Point(107, 47);
+            this.txt_hienthi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_hienthi.Name = "txt_hienthi";
-            this.txt_hienthi.Size = new System.Drawing.Size(260, 20);
+            this.txt_hienthi.Size = new System.Drawing.Size(345, 22);
             this.txt_hienthi.TabIndex = 0;
+            this.txt_hienthi.TextChanged += new System.EventHandler(this.txt_hienthi_TextChanged);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // btntuchien
             // 
-            this.btntuchien.Location = new System.Drawing.Point(80, 100);
+            this.btntuchien.Location = new System.Drawing.Point(107, 123);
+            this.btntuchien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btntuchien.Name = "btntuchien";
-            this.btntuchien.Size = new System.Drawing.Size(98, 28);
+            this.btntuchien.Size = new System.Drawing.Size(131, 34);
             this.btntuchien.TabIndex = 2;
             this.btntuchien.Text = "Thực hiện";
             this.btntuchien.UseVisualStyleBackColor = true;
@@ -59,9 +63,10 @@
             // 
             // btnthoat
             // 
-            this.btnthoat.Location = new System.Drawing.Point(239, 100);
+            this.btnthoat.Location = new System.Drawing.Point(319, 123);
+            this.btnthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(101, 27);
+            this.btnthoat.Size = new System.Drawing.Size(135, 33);
             this.btnthoat.TabIndex = 3;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
@@ -69,12 +74,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 200);
+            this.ClientSize = new System.Drawing.Size(576, 246);
             this.Controls.Add(this.btnthoat);
             this.Controls.Add(this.btntuchien);
             this.Controls.Add(this.txt_hienthi);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Hello World";
             this.Load += new System.EventHandler(this.Form1_Load);
